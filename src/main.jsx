@@ -3,6 +3,7 @@ import ReactDOM from "react-dom/client";
 import { BrowserRouter } from "react-router-dom";
 import App from "./App.jsx";
 import "./index.css";
+import * as serviceWorkerRegistration from '../serviceWorkerRegistration';
 import AuthProvider from "./Components/Blocks/AuthContext";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
@@ -14,3 +15,5 @@ ReactDOM.createRoot(document.getElementById("root")).render(
     </AuthProvider>
   </React.StrictMode>
 );
+
+serviceWorkerRegistration.register();
