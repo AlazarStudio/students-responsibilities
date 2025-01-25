@@ -23,26 +23,30 @@ function ProtectedRoute({ children }) {
 
 function App() {
   return (
-    <Routes>
-      <Route path="/login" element={<LoginPage />} />
-      <Route path="/register" element={<RegistrationPage />} />
-      <Route
-        path="/"
-        element={
-          <ProtectedRoute>
-            <Layout />
-          </ProtectedRoute>
-        }
-      >
-        <Route index element={<Main_Page />} />
-        <Route path="/rights" element={<RightsPage />} />
-        <Route path="/obligations" element={<ObligationsPage />} />
-        <Route path="/faq" element={<FAQPage />} />
-        <Route path="/contacts" element={<ContactsPage />} />
-        <Route path="*" element={<Non_Found_Page />} />
-      </Route>
-    </Routes>
+    <>
+      <Routes>
+        <Route path="/login" element={<LoginPage />} />
+        <Route path="/register" element={<RegistrationPage />} />
+        <Route
+          path="/"
+          element={
+            <ProtectedRoute>
+              <Layout />
+            </ProtectedRoute>
+          }
+        >
+          <Route index element={<Main_Page />} />
+          <Route path="/rights" element={<RightsPage />} />
+          <Route path="/obligations" element={<ObligationsPage />} />
+          <Route path="/faq" element={<FAQPage />} />
+          <Route path="/contacts" element={<ContactsPage />} />
+          <Route path="*" element={<Non_Found_Page />} />
+        </Route>
+      </Routes>
 
+      {/* Кнопка установки */}
+      <InstallButton />
+    </>
   );
 }
 
