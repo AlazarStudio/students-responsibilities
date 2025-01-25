@@ -5,6 +5,7 @@ import Main_Page from "./Components/Pages/Main_Page";
 import Non_Found_Page from "./Components/Pages/Non_Found_Page";
 import Layout from "./Components/Standart/Layout/Layout";
 import LoginPage from "./Components/Pages/LoginPage";
+import InstallButton from "./Components/Pages/InstallButton/InstallButton";
 import { AuthContext } from "./Components/Blocks/AuthContext";
 
 import RightsPage from "./Components/Pages/RightsPage";
