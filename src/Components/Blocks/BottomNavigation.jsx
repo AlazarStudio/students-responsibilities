@@ -45,6 +45,17 @@ const BottomNav = () => {
                         key={index}
                         label={item.label}
                         icon={item.icon}
+                        sx={{
+                            minWidth: 50, // Уменьшает ширину кнопки
+                            padding: "0px", // Уменьшает внутренние отступы
+                            "& .MuiBottomNavigationAction-label": {
+                                fontSize: "12px", // Уменьшает размер текста
+                                lineHeight: "1", // Уменьшает высоту строки
+                            },
+                            "& .MuiSvgIcon-root": {
+                                fontSize: "22px", // Уменьшает размер иконки
+                            },
+                        }}
                     />
                 ))}
             </BottomNavigation>

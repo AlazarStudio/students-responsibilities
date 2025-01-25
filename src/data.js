@@ -4,14 +4,14 @@ export const userData = [
     {
         id: 1,
         role: 'admin', // роли: admin или user
-        email: 'admin@example.com',
-        password: 'admin123', // простые данные для примера, заменить в будущем
+        email: 'admin',
+        password: 'admin', // простые данные для примера, заменить в будущем
     },
     {
         id: 2,
         role: 'user',
-        email: 'user@example.com',
-        password: 'user123',
+        email: 'user',
+        password: 'user',
     },
 ];
 
